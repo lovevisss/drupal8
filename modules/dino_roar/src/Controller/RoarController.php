@@ -9,9 +9,10 @@ use Symfony\Component\HttpFoundation\Response;
 class RoarController
 {
 	
-	public function roar()
+	public function roar($count)
 	{
-		return new Response('roarr!!');
+		$roar = 'R'.str_repeat('O', $count).'AR!';
+		return new Response($roar);
 
 	}
 }
