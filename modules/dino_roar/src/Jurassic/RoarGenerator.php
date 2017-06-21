@@ -26,7 +26,7 @@ class RoarGenerator{
         $store = $this->keyvalue->get('dino');
         if($store->has($key))
         {
-            return store->get($key);
+            return $store->get($key);
         }
         sleep(2);
 		$string =  'R'.str_repeat('o', $length).'AR!';
