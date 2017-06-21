@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Response;
 class RoarController extends ControllerBase
 {
     private $roarGenerator;
-    private $loggerFactory;
+
 	public function __construct(RoarGenerator $roarGenerator, LoggerChannelFactoryInterface $loggerFactory)
     {
         $this->roarGenerator = $roarGenerator;
